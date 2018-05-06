@@ -14,6 +14,10 @@ gulp.task('watch', function () {
     browserSync.reload();
   });
 
+  watch('./app/assets/images/icons', function() {
+    gulp.start('icons');
+  })
+
   watch('./app/assets/styles/**/*.css', function () {
     gulp.start('cssInject');
   });
