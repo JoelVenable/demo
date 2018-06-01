@@ -1239,3 +1239,16 @@ a {
       margin-right: 1.4rem
   }
   }
+
+.reveal-item {
+    opacity: 0;
+    -webkit-transform: scale(.85);
+            transform: scale(.85);
+}
+
+.reveal-item--is-visible {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+        transition: all 1s ease-out;
+    }

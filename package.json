@@ -6,7 +6,8 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.4.1",
