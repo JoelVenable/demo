@@ -2,6 +2,13 @@
   padding-top: 10px;
   @mixin atMedium {
     padding-top: 0;
+
+    
+
+    & .is-current-link {
+      color: #fabb69;
+      
+    }
   }
   ul {
       margin: 0;
@@ -16,6 +23,7 @@
     display: inline-block;
 
     @mixin atMedium {
+      
       float:left;
       display: block;
       padding-right: 20px;
@@ -51,3 +59,4 @@
 
   
 }
+
