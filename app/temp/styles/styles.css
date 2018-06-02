@@ -751,6 +751,10 @@ a {
 
 }
 
+.wrapper--narrow {
+    max-width: 500px;
+  }
+
 .wrapper--medium {
     max-width: 976px;
   }
@@ -1050,6 +1054,11 @@ a {
     color: #2f5572;
   }
 
+.section-title--less-margin {
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+  }
+
 .section-title strong {
     font-weight: 500;
   }
@@ -1274,3 +1283,89 @@ a {
         opacity: 1;
         transition: all 1s ease-out;
     }
+
+.modal {
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(255,255,255,.94);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    transition: all .3s ease-out;
+}
+
+.modal--is-visible {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+.modal__description {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+.modal__close {
+        -webkit-transform: scaleX(1.2);
+                transform: scaleX(1.2);
+        -webkit-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+        position: absolute;
+        color: @mainOrange;
+        top: 15px;
+        right: 15px;
+        color: #2f5572;
+        cursor: pointer;
+
+    }
+
+.modal__close:hover {
+            color: #d59541;
+        }
+
+.modal__inner  {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 100%;
+    }
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons__icon {
+        background-color: #d59541;
+        display: inline-block;
+        margin: 0 5px 5px 5px;
+        width: 33%;
+        height: 72px;
+        position: relative;
+    }
+
+@media (min-width: 530px) {
+
+.social-icons__icon {
+            width: 72px;
+            margin: 0 5px
+    }
+  }
+
+.social-icons__icon .icon {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+        }
